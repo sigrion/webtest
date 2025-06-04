@@ -8,9 +8,17 @@
     /* ... */
   </style>
   <script>
-    // Código JavaScript para la simulación
-    // ...
-  </script>
+  function mostrarResultado() {
+    // Lógica para mostrar un mensaje de finalización sin respuestas correctas
+    alert("¡Cuestionario completado!");
+    // Otras acciones que desees realizar al finalizar el cuestionario
+  }
+
+  function aceptarCarta() {
+    const texto = document.getElementById("textoCarta").value;
+    alert("Texto ingresado: " + texto);
+  }
+</script>
 </head>
 <body>
   <h1>Simulación de Cuestionario</h1>
@@ -31,13 +39,12 @@
   
   <br>
   <button onclick="mostrarResultado()">Finalizar</button>
+<details id="menu-cartas">
+  <summary>Menú de Cartas</summary>
+  <input type="text" id="textoCarta" placeholder="Escribe tu jugada">
+  <button onclick="aceptarCarta()">Aceptar</button>
+</details>
+
   
-  <script>
-    function mostrarResultado() {
-      // Lógica para mostrar un mensaje de finalización sin respuestas correctas
-      alert('¡Cuestionario completado!');
-      // Otras acciones que desees realizar al finalizar el cuestionario
-    }
-  </script>
 </body>
 </html>
