@@ -1,0 +1,16 @@
+#menu-cartas {
+  margin-top: 10px;
+}
+
+#menu-cartas summary {
+  cursor: pointer;
+  background-color: #eee;
+  padding: 5px;
+  width: 150px;
+  border: 1px solid #ccc;
+}
+
+#menu-cartas input {
+  margin-top: 5px;
+  display: block;
+}
